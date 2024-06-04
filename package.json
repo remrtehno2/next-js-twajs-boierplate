@@ -1,0 +1,27 @@
+{
+  "name": "next-translate-app-dir",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start",
+    "type-check": "tsc"
+  },
+  "main": "pages/index.tsx",
+  "dependencies": {
+    "next": "14.2.3",
+    "next-translate": "2.6.2",
+    "react": "18.3.1",
+    "react-dom": "18.3.1"
+  },
+  "devDependencies": {
+    "next-translate-plugin": "2.6.2",
+    "typescript": "5.4.5",
+    "@types/node": "20.14.1",
+    "@types/react": "18.3.3",
+    "@types/react-dom": "18.3.0"
+  },
+  "license": "ISC",
+  "keywords": [],
+  "description": ""
+}
