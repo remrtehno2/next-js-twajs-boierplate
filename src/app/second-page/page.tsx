@@ -7,8 +7,21 @@ import {
   DropdownItem,
   Button,
 } from "@nextui-org/react";
+import {
+  useLaunchParams,
+  useMiniApp,
+  useThemeParams,
+  useViewport,
+} from "@tma.js/sdk-react";
 
 export default function App() {
+  const lp = useLaunchParams();
+  const miniApp = useMiniApp();
+  const themeParams = useThemeParams();
+  const viewport = useViewport();
+
+  console.log({ lp, miniApp, themeParams, viewport }, "test");
+
   return (
     <Dropdown>
       <DropdownTrigger>

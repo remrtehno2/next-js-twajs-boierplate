@@ -1,5 +1,7 @@
+"use client";
 import { NextUIProvider } from "@nextui-org/system";
 import { Suspense } from "react";
+import { SDKProvider } from "@tma.js/sdk-react";
 
 export interface ProvidersProps {
   children: React.ReactNode;
@@ -8,7 +10,9 @@ export interface ProvidersProps {
 export function Providers({ children }: ProvidersProps) {
   return (
     <NextUIProvider>
-      <Suspense fallback={<div>Loading...</div>}>{children}</Suspense>
+      <SDKProvider>
+        <Suspense fallback={<div>Loading...</div>}>{children}</Suspense>
+      </SDKProvider>
     </NextUIProvider>
   );
 }
