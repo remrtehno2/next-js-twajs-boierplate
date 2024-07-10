@@ -12,7 +12,7 @@ import {
   useMiniApp,
   useThemeParams,
   useViewport,
-} from "@tma.js/sdk-react";
+} from "@telegram-apps/sdk-react";
 
 export default function App() {
   const lp = useLaunchParams();
