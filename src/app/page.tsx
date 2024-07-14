@@ -1,9 +1,11 @@
+"use client";
 import Link from "next/link";
 import useTranslation from "next-translate/useTranslation";
 import ClientCode from "../components/client-code";
 import { Button } from "@nextui-org/button";
+import { useTgBackButton } from "@/hooks/useTgBackButton";
 
-export default function Page() {
+const Page = () => {
   const { t, lang } = useTranslation("common");
 
   return (
@@ -28,8 +30,6 @@ export default function Page() {
       </div>
     </>
   );
-}
-
-export const metadata = {
-  title: "App directory",
 };
+
+export default Page;
